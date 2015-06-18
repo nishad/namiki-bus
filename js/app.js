@@ -9,7 +9,7 @@ $(document).ready(function() {
   }
   
   function minuteOrMinutes(minutes) {
-    return (minutes == 1)?' minut':' minuter';
+    return (minutes == 1)?' minute':' minutes';
   }
   
   function minutesToDeparture(now, departureTime) {
