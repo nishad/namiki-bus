@@ -109,7 +109,7 @@ $(document).ready(function() {
       var timetable = buildTimetable(departures_weekdays, departures_weekends);
       timetable.insertAfter(button);
       setTimeout(function(){
-        $('body').one('click', function(e) {
+        $('body').one('click touchstart', function(e) {
           timetable.remove();
           return false;
         });
