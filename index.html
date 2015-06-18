@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>並木 バス</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="並木 バス" />
+    <meta name="description" content="並木 バス" />
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png" />
+    
+    <style>
+    h2 {
+      font-size: 1.2em;
+      color: #AAA;
+    }
+    
+    body {
+      color: #F58B2F;
+      font-family: "Arial";
+      font-size: 3.5em;
+    }
+
+    #main {
+      padding: 20px;
+    	background: -webkit-gradient(linear, left top, left bottom, from(#DDDDDD), to(#FFFFFF));
+    	background: -moz-linear-gradient(top,  #DDDDDD,  #FFFFFF);
+    	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF');
+
+      margin: 0 auto;
+      width: 90%;
+      min-width: 500px;
+    }
+    
+    .rounded {
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+    }
+
+    #show_timetable_from_luma, #show_timetable_to_luma {
+      height: 50px;
+      width: 50px;
+      margin-left: 2em;
+      display: inline-block;
+      background: url('list.png') #AAA no-repeat;
+      cursor: pointer;
+    }
+    
+    .timetable {
+      z-index: 100;
+      width: 50%;
+      position: absolute;
+      top: 1em;
+      background: #444;
+      padding: 1em;
+    }
+    
+    .nextDeparture {
+      color: white;
+    }
+        
+    </style>
+</head>
+<body>
+  <div id="main" class="rounded">
+  <h2>並木２丁目 ► つくばセンター</h2>
+  <div>
+    <span id="from_luma"></span><span id="show_timetable_from_luma" class="rounded"></span>
+  </div>
+  <h2>つくばセンター ► 並木２丁目</h2>
+  <div>
+    <span id="to_luma"></span><span id="show_timetable_to_luma" class="rounded"></span>
+  </div>
+  
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/timing.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
